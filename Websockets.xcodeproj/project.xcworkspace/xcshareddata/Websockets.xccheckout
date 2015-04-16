@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0E5B1F4-085B-4F7E-9E8D-44B60BF02D73</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</key>
+		<string>https://github.com/krohling/ArduinoWebsocketClient.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</key>
+		<string>ArduinoWebsocketClient/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/krohling/ArduinoWebsocketClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ArduinoWebsocketClient</string>
+		</dict>
+	</array>
+</dict>
+</plist>
