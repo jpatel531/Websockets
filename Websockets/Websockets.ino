@@ -97,48 +97,87 @@
  
  */
 
+
+#include <Base64.h>
+#include <global.h>
+#include <MD5.h>
+#include <sha1.h>
+#include <WSClient.h>
+
 #include <Ethernet.h>
 #include <SPI.h>
-#include <WebSocketClient.h>
+#include <WSClient.h>
 
-byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-char server[] = "192.168.0.5:4567";
-WebSocketClient client;
-IPAddress ip(192, 168, 0, 177);
-char path[] = "/";
-int port = 80;
+// Ethernet Configuration
+EthernetClient client;
+byte mac[] = {
+    0x90, 0xA2, 0xDA, 0x00, 0xF2, 0x78 };
 
-void dataArrived(WebSocketClient client, String data) {
-    Serial.println("Data Arrived: " + data);
+IPAddress server(174,129,224,73);
+
+// Websocket initialization
+WSClient websocket;
+
+void connectToServer(EthernetClient& client){
+    Serial.println("connecting..");
+    if (client.connect(server, 80)) {
+        Serial.println(client.connected());
+        Serial.println("Connected");
+    }
+    else {
+        Serial.println("Connection failed.");
+        delay(2000);
+        connectToServer(client);
+    }
 }
 
 void setup() {
     Serial.begin(9600);
-    Ethernet.begin(mac);
+    Serial.println(F("Demo example on WSClient usage"));
+    Ethernet.begin(mac); // initialize ethernet
+    Serial.println(Ethernet.localIP()); // printout IP address for debug purposes
+    delay(1000); // this is arduino baby ;-)
     
-    // start the Ethernet connection:
-    if (Ethernet.begin(mac) == 0) {
-        Serial.println("Failed to configure Ethernet using DHCP");
-        // no point in carrying on, so do nothing forevermore:
-        // try to congifure using IP address instead of DHCP:
-        Ethernet.begin(mac, ip);
+    // Connect and test websocket server connectivity
+    
+    connectToServer(client);
+    
+    // Define path and host for Handshaking with the server
+    websocket.path = "/";
+    websocket.host = "echo.websocket.org";
+    
+    if (websocket.handshake(client)) {
+        Serial.println("Handshake successful");
     }
-    // give the Ethernet shield a second to initialize:
-    delay(1000);
-    Serial.println("connecting...");
-    
-    Serial.println("yolo");
-    if (client.connect(server, path, port)) {
-        Serial.println("connected to ws server");
-    } else {
-        Serial.println("failed to connect");
+    else {
+        Serial.println("Handshake failed.");
+        while(1) {
+            // Hang on failure
+        }
     }
     
-    client.setDataArrivedDelegate(dataArrived);
-    delay(3000);
-    client.send("Hello World!");
 }
 
+
 void loop() {
-    client.monitor();
+    String data;
+    
+    if (client.connected()) {
+        data = websocket.getData();
+        if (data.length() > 0) {
+            Serial.print("Received data: ");
+            Serial.println(data);
+        }
+        
+        Serial.println(F("")); Serial.println(F("Sending Data"));
+        websocket.sendData("echo test");
+    } else {
+        Serial.println("Client disconnected.");
+        while (1) {
+            // Hang on disconnect.
+        }
+    }
+    
+    delay(3000);  // wait to fully let the client disconnect
+    
 }

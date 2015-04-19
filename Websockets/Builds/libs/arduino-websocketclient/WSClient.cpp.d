@@ -1,7 +1,10 @@
-Builds/libs/ArduinoWebsocketClient/WebSocketClient.cpp.o: \
- /Users/jamiepatel/Documents/Arduino/libraries/ArduinoWebsocketClient/WebSocketClient.cpp \
- /Users/jamiepatel/Documents/Arduino/libraries/ArduinoWebsocketClient/WebSocketClient.h \
+Builds/libs/arduino-websocketclient/WSClient.cpp.o: \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/WSClient.cpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/sha1.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/base64.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/Ethernet.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
@@ -9,15 +12,12 @@ Builds/libs/ArduinoWebsocketClient/WebSocketClient.cpp.o: \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/binary.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WCharacter.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBAPI.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Client.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetServer.h \
@@ -25,4 +25,6 @@ Builds/libs/ArduinoWebsocketClient/WebSocketClient.cpp.o: \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/Dhcp.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetUdp.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Udp.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/WSClient.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/SPI.h

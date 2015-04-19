@@ -11,11 +11,16 @@ Builds/main.cpp.o: main.cpp \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
  Websockets.ino \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/Base64.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/global.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/MD5.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/sha1.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/WSClient.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/Ethernet.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetClient.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Client.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetServer.h \
@@ -24,6 +29,4 @@ Builds/main.cpp.o: main.cpp \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetUdp.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Udp.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/SPI.h \
- /Users/jamiepatel/Documents/Arduino/libraries/ArduinoWebsocketClient/WebSocketClient.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/SPI.h
