@@ -6,24 +6,44 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A0E5B1F4-085B-4F7E-9E8D-44B60BF02D73</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Websockets</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</key>
 		<string>https://github.com/krohling/ArduinoWebsocketClient.git</string>
+		<key>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</key>
+		<string>https://github.com/jpatel531/Websockets.git</string>
+		<key>BAC2D03156E332530A39C2FE00C794C96088E27A</key>
+		<string>https://github.com/djsb/arduino-websocketclient.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Websockets.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</key>
-		<string>ArduinoWebsocketClient/</string>
+		<string>../../../Documents/Arduino/libraries/ArduinoWebsocketClient</string>
+		<key>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</key>
+		<string>../..</string>
+		<key>BAC2D03156E332530A39C2FE00C794C96088E27A</key>
+		<string>../../../Documents/Arduino/libraries/arduino-websocketclient</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/krohling/ArduinoWebsocketClient.git</string>
+	<string>https://github.com/jpatel531/Websockets.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</string>
+	<string>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BAC2D03156E332530A39C2FE00C794C96088E27A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>arduino-websocketclient</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -31,6 +51,14 @@
 			<string>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ArduinoWebsocketClient</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Websockets</string>
 		</dict>
 	</array>
 </dict>

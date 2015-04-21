@@ -778,14 +778,16 @@
 		9E1A156C1ADF11FA00D933F1 /* uploader_izmir.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = uploader_izmir.sh; path = Utilities/uploader_izmir.sh; sourceTree = "<group>"; };
 		9E1A156D1ADF11FA00D933F1 /* uploader_robotis.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = uploader_robotis.py; path = Utilities/uploader_robotis.py; sourceTree = "<group>"; };
 		9E1A156E1ADF11FA00D933F1 /* Websockets.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Websockets.ino; sourceTree = "<group>"; };
-		9EE5BE0B1ADF1D2E00356FAC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		9EE5BE0E1ADF1D2E00356FAC /* EchoExample.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EchoExample.ino; sourceTree = "<group>"; };
-		9EE5BE101ADF1D2E00356FAC /* Contributors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Contributors.txt; sourceTree = "<group>"; };
-		9EE5BE111ADF1D2E00356FAC /* HashMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashMap.h; sourceTree = "<group>"; };
-		9EE5BE121ADF1D2E00356FAC /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
-		9EE5BE131ADF1D2E00356FAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9EE5BE141ADF1D2E00356FAC /* WebSocketClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocketClient.cpp; sourceTree = "<group>"; };
-		9EE5BE151ADF1D2E00356FAC /* WebSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketClient.h; sourceTree = "<group>"; };
+		9EE5BE171AE071FB00356FAC /* Base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base64.cpp; sourceTree = "<group>"; };
+		9EE5BE181AE071FB00356FAC /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		9EE5BE191AE071FB00356FAC /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		9EE5BE1A1AE071FB00356FAC /* MD5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MD5.c; sourceTree = "<group>"; };
+		9EE5BE1B1AE071FB00356FAC /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		9EE5BE1C1AE071FB00356FAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9EE5BE1D1AE071FB00356FAC /* sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha1.cpp; sourceTree = "<group>"; };
+		9EE5BE1E1AE071FB00356FAC /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		9EE5BE1F1AE071FB00356FAC /* WSClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WSClient.cpp; sourceTree = "<group>"; };
+		9EE5BE201AE071FB00356FAC /* WSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSClient.h; sourceTree = "<group>"; };
 		AAAA150415224056AA000006 /* abi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abi.cpp; sourceTree = "<group>"; };
 		AAAA150415224056AA000007 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
 		AAAA150415224056AA000008 /* binary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary.h; sourceTree = "<group>"; };
@@ -1619,43 +1621,21 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
-		9EE5BE0A1ADF1D2E00356FAC /* ArduinoWebsocketClient */ = {
+		9EE5BE161AE071FB00356FAC /* arduino-websocketclient */ = {
 			isa = PBXGroup;
 			children = (
-				9EE5BE0B1ADF1D2E00356FAC /* .gitignore */,
-				9EE5BE0C1ADF1D2E00356FAC /* examples */,
-				9EE5BE0F1ADF1D2E00356FAC /* HashMap */,
-				9EE5BE131ADF1D2E00356FAC /* README.md */,
-				9EE5BE141ADF1D2E00356FAC /* WebSocketClient.cpp */,
-				9EE5BE151ADF1D2E00356FAC /* WebSocketClient.h */,
+				9EE5BE171AE071FB00356FAC /* Base64.cpp */,
+				9EE5BE181AE071FB00356FAC /* Base64.h */,
+				9EE5BE191AE071FB00356FAC /* global.h */,
+				9EE5BE1A1AE071FB00356FAC /* MD5.c */,
+				9EE5BE1B1AE071FB00356FAC /* MD5.h */,
+				9EE5BE1C1AE071FB00356FAC /* README.md */,
+				9EE5BE1D1AE071FB00356FAC /* sha1.cpp */,
+				9EE5BE1E1AE071FB00356FAC /* sha1.h */,
+				9EE5BE1F1AE071FB00356FAC /* WSClient.cpp */,
+				9EE5BE201AE071FB00356FAC /* WSClient.h */,
 			);
-			path = ArduinoWebsocketClient;
-			sourceTree = "<group>";
-		};
-		9EE5BE0C1ADF1D2E00356FAC /* examples */ = {
-			isa = PBXGroup;
-			children = (
-				9EE5BE0D1ADF1D2E00356FAC /* EchoExample */,
-			);
-			path = examples;
-			sourceTree = "<group>";
-		};
-		9EE5BE0D1ADF1D2E00356FAC /* EchoExample */ = {
-			isa = PBXGroup;
-			children = (
-				9EE5BE0E1ADF1D2E00356FAC /* EchoExample.ino */,
-			);
-			path = EchoExample;
-			sourceTree = "<group>";
-		};
-		9EE5BE0F1ADF1D2E00356FAC /* HashMap */ = {
-			isa = PBXGroup;
-			children = (
-				9EE5BE101ADF1D2E00356FAC /* Contributors.txt */,
-				9EE5BE111ADF1D2E00356FAC /* HashMap.h */,
-				9EE5BE121ADF1D2E00356FAC /* License.txt */,
-			);
-			path = HashMap;
+			path = "arduino-websocketclient";
 			sourceTree = "<group>";
 		};
 		AAAA150415224056AA000000 /* Resources */ = {
@@ -3616,7 +3596,7 @@
 		AAAA150415224056AA000344 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				9EE5BE0A1ADF1D2E00356FAC /* ArduinoWebsocketClient */,
+				9EE5BE161AE071FB00356FAC /* arduino-websocketclient */,
 				AAAA150415224056AA0000C6 /* Ethernet */,
 			);
 			name = Libraries;

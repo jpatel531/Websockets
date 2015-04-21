@@ -108,45 +108,65 @@
 #include <SPI.h>
 #include <WSClient.h>
 
-// Ethernet Configuration
-EthernetClient client;
-byte mac[] = {
-    0x90, 0xA2, 0xDA, 0x00, 0xF2, 0x78 };
+class Pusher {
+private:
+    EthernetClient *ethernet;
+    WSClient ws;
+    String host = "ws.pusherapp.com";
+    String path;
+    String url;
+    static const String VERSION;
+    static const String PROTOCOL;
+    static const String AGENT;
+    int port = 80;
+    void connectViaEthernet();
+public:
+    String key;
+    Pusher (String);
+    bool connected;
+    void connect(EthernetClient &client);
+//    Channel subscribe(String channel);
+};
 
-IPAddress server(174,129,224,73);
+const String Pusher::VERSION = "0.0.1";
+const String Pusher::PROTOCOL = "7";
+const String Pusher::AGENT = "pusher-ws-arduino";
 
-// Websocket initialization
-WSClient websocket;
+Pusher::Pusher(String k) : key(k) {
+    path = "/app/" + key+ "?client="+ AGENT+ "&version="+VERSION+"&protocol=" + PROTOCOL;
+    url = host + path;
+}
 
-void connectToServer(EthernetClient& client){
+
+
+void Pusher::connectViaEthernet(){
     Serial.println("connecting..");
-    if (client.connect(server, 80)) {
-        Serial.println(client.connected());
-        Serial.println("Connected");
+    if (ethernet->connect(host.c_str(), port)) {
+        Serial.println(ethernet->connected());
+        Serial.println(F("Connected"));
     }
     else {
-        Serial.println("Connection failed.");
+        Serial.println(F("Connection failed."));
         delay(2000);
-        connectToServer(client);
+        connectViaEthernet();
     }
 }
 
-void setup() {
-    Serial.begin(9600);
-    Serial.println(F("Demo example on WSClient usage"));
-    Ethernet.begin(mac); // initialize ethernet
-    Serial.println(Ethernet.localIP()); // printout IP address for debug purposes
-    delay(1000); // this is arduino baby ;-)
+
+void Pusher::connect(EthernetClient &client){
+    ethernet = &client;
+    connectViaEthernet();
+
+    delay(1000);
     
-    // Connect and test websocket server connectivity
+    ws.path = &path[0];
+    ws.host = &host[0];
+//    
+//    websocket.path = "/app/112bcc871ae79ea6227?client=pusher-ws-arduino&version=0.0.1&protocol=7";
+//    websocket.host = "ws.pusherapp.com";
     
-    connectToServer(client);
-    
-    // Define path and host for Handshaking with the server
-    websocket.path = "/";
-    websocket.host = "echo.websocket.org";
-    
-    if (websocket.handshake(client)) {
+    //    Serial.flush();
+    if (ws.handshake(client)) {
         Serial.println("Handshake successful");
     }
     else {
@@ -155,29 +175,67 @@ void setup() {
             // Hang on failure
         }
     }
+
+    
+
+}
+
+//void Pusher::subscribe(String channel){
+
+//}
+
+// Ethernet Configuration
+EthernetClient client;
+byte mac[] = {
+    0x90, 0xA2, 0xDA, 0x00, 0xF2, 0x78 };
+
+
+//IPAddress server(174,129,224,73);
+char server[] = "ws.pusherapp.com";
+
+// Websocket initialization
+//WSClient websocket;
+
+Pusher pusher("112bcc871ae79ea6227");
+
+void setup() {
+    
+    
+    Serial.begin(9600);
+    
+    Serial.println(F("Demo example on WSClient usage"));
+    Ethernet.begin(mac); // initialize ethernet
+    Serial.println(Ethernet.localIP()); // printout IP address for debug purposes
+    delay(1000); // this is arduino baby ;-)
+    
+    
+    pusher.connect(client);
+    
+
+    
     
 }
 
 
 void loop() {
-    String data;
-    
-    if (client.connected()) {
-        data = websocket.getData();
-        if (data.length() > 0) {
-            Serial.print("Received data: ");
-            Serial.println(data);
-        }
-        
-        Serial.println(F("")); Serial.println(F("Sending Data"));
-        websocket.sendData("echo test");
-    } else {
-        Serial.println("Client disconnected.");
-        while (1) {
-            // Hang on disconnect.
-        }
-    }
-    
-    delay(3000);  // wait to fully let the client disconnect
+//    String data;
+//    
+//    if (client.connected()) {
+//        data = websocket.getData();
+//        if (data.length() > 0) {
+//            Serial.print("Received data: ");
+//            Serial.println(data);
+//        }
+//        
+//        Serial.println(F("")); Serial.println(F("Sending Data"));
+//        websocket.sendData("{\"event\":\"pusher:subscribe\"}");
+//    } else {
+//        Serial.println("Client disconnected.");
+//        while (1) {
+//            // Hang on disconnect.
+//        }
+//    }
+//    
+//    delay(3000);  // wait to fully let the client disconnect
     
 }
