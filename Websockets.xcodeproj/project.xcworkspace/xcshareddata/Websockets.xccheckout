@@ -14,8 +14,12 @@
 		<string>https://github.com/krohling/ArduinoWebsocketClient.git</string>
 		<key>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</key>
 		<string>https://github.com/jpatel531/Websockets.git</string>
+		<key>680B43941F48A36A0471451E1F70DFF3E2A8F430</key>
+		<string>https://github.com/bblanchon/ArduinoJson.git</string>
 		<key>BAC2D03156E332530A39C2FE00C794C96088E27A</key>
 		<string>https://github.com/djsb/arduino-websocketclient.git</string>
+		<key>F82126AFC57ECEF01A59099FCAE2B1097AC96861</key>
+		<string>https://github.com/maniacbug/StandardCplusplus.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Websockets.xcodeproj</string>
@@ -25,8 +29,12 @@
 		<string>../../../Documents/Arduino/libraries/ArduinoWebsocketClient</string>
 		<key>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</key>
 		<string>../..</string>
+		<key>680B43941F48A36A0471451E1F70DFF3E2A8F430</key>
+		<string>../../../../Documents/Arduino/libraries/ArduinoJson</string>
 		<key>BAC2D03156E332530A39C2FE00C794C96088E27A</key>
 		<string>../../../Documents/Arduino/libraries/arduino-websocketclient</string>
+		<key>F82126AFC57ECEF01A59099FCAE2B1097AC96861</key>
+		<string>../../../../Documents/Arduino/libraries/StandardCplusplus</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jpatel531/Websockets.git</string>
@@ -48,9 +56,25 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>680B43941F48A36A0471451E1F70DFF3E2A8F430</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ArduinoJson</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ArduinoWebsocketClient</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F82126AFC57ECEF01A59099FCAE2B1097AC96861</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StandardCplusplus</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

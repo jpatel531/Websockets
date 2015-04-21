@@ -788,6 +788,64 @@
 		9EE5BE1E1AE071FB00356FAC /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
 		9EE5BE1F1AE071FB00356FAC /* WSClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WSClient.cpp; sourceTree = "<group>"; };
 		9EE5BE201AE071FB00356FAC /* WSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSClient.h; sourceTree = "<group>"; };
+		9EE5BE3E1AE65A4000356FAC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9EE5BE3F1AE65A4000356FAC /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		9EE5BE401AE65A4000356FAC /* ArduinoJson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArduinoJson.cpp; sourceTree = "<group>"; };
+		9EE5BE411AE65A4000356FAC /* ArduinoJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoJson.h; sourceTree = "<group>"; };
+		9EE5BE421AE65A4000356FAC /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		9EE5BE431AE65A4000356FAC /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9EE5BE461AE65A4000356FAC /* IndentedPrintExample.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IndentedPrintExample.ino; sourceTree = "<group>"; };
+		9EE5BE481AE65A4000356FAC /* JsonGeneratorExample.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonGeneratorExample.ino; sourceTree = "<group>"; };
+		9EE5BE4A1AE65A4000356FAC /* JsonParserExample.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonParserExample.ino; sourceTree = "<group>"; };
+		9EE5BE4C1AE65A4000356FAC /* JsonServer.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonServer.ino; sourceTree = "<group>"; };
+		9EE5BE4E1AE65A4000356FAC /* JsonUdpBeacon.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonUdpBeacon.ino; sourceTree = "<group>"; };
+		9EE5BE521AE65A4000356FAC /* Print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Print.hpp; sourceTree = "<group>"; };
+		9EE5BE531AE65A4000356FAC /* DynamicJsonBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DynamicJsonBuffer.hpp; sourceTree = "<group>"; };
+		9EE5BE551AE65A4000356FAC /* IndentedPrint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IndentedPrint.hpp; sourceTree = "<group>"; };
+		9EE5BE561AE65A4000356FAC /* JsonBufferAllocated.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonBufferAllocated.hpp; sourceTree = "<group>"; };
+		9EE5BE571AE65A4000356FAC /* JsonParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonParser.hpp; sourceTree = "<group>"; };
+		9EE5BE581AE65A4000356FAC /* JsonPrintable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonPrintable.hpp; sourceTree = "<group>"; };
+		9EE5BE591AE65A4000356FAC /* JsonVariantContent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonVariantContent.hpp; sourceTree = "<group>"; };
+		9EE5BE5A1AE65A4000356FAC /* JsonVariantType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonVariantType.hpp; sourceTree = "<group>"; };
+		9EE5BE5B1AE65A4000356FAC /* JsonWriter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonWriter.hpp; sourceTree = "<group>"; };
+		9EE5BE5C1AE65A4000356FAC /* List.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		9EE5BE5D1AE65A4000356FAC /* ListConstIterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListConstIterator.hpp; sourceTree = "<group>"; };
+		9EE5BE5E1AE65A4000356FAC /* ListIterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListIterator.hpp; sourceTree = "<group>"; };
+		9EE5BE5F1AE65A4000356FAC /* ListNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListNode.hpp; sourceTree = "<group>"; };
+		9EE5BE601AE65A4000356FAC /* Prettyfier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Prettyfier.hpp; sourceTree = "<group>"; };
+		9EE5BE611AE65A4000356FAC /* QuotedString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuotedString.hpp; sourceTree = "<group>"; };
+		9EE5BE621AE65A4000356FAC /* ReferenceType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReferenceType.hpp; sourceTree = "<group>"; };
+		9EE5BE631AE65A4000356FAC /* StringBuilder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringBuilder.hpp; sourceTree = "<group>"; };
+		9EE5BE641AE65A4000356FAC /* JsonArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonArray.hpp; sourceTree = "<group>"; };
+		9EE5BE651AE65A4000356FAC /* JsonBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonBuffer.hpp; sourceTree = "<group>"; };
+		9EE5BE661AE65A4000356FAC /* JsonObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonObject.hpp; sourceTree = "<group>"; };
+		9EE5BE671AE65A4000356FAC /* JsonPair.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonPair.hpp; sourceTree = "<group>"; };
+		9EE5BE681AE65A4000356FAC /* JsonVariant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = JsonVariant.hpp; sourceTree = "<group>"; };
+		9EE5BE691AE65A4000356FAC /* StaticJsonBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StaticJsonBuffer.hpp; sourceTree = "<group>"; };
+		9EE5BE6A1AE65A4000356FAC /* ArduinoJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoJson.h; sourceTree = "<group>"; };
+		9EE5BE6B1AE65A4000356FAC /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		9EE5BE6C1AE65A4000356FAC /* library.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = library.json; sourceTree = "<group>"; };
+		9EE5BE6D1AE65A4000356FAC /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		9EE5BE6E1AE65A4000356FAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9EE5BE701AE65A4000356FAC /* build-arduino-package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-arduino-package.sh"; sourceTree = "<group>"; };
+		9EE5BE711AE65A4000356FAC /* cpplint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = cpplint.sh; sourceTree = "<group>"; };
+		9EE5BE721AE65A4000356FAC /* create-build-envs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "create-build-envs.sh"; sourceTree = "<group>"; };
+		9EE5BE731AE65A4000356FAC /* format-code.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "format-code.sh"; sourceTree = "<group>"; };
+		9EE5BE741AE65A4000356FAC /* run-tests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-tests.sh"; sourceTree = "<group>"; };
+		9EE5BE771AE65A4000356FAC /* Print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Print.cpp; sourceTree = "<group>"; };
+		9EE5BE781AE65A4000356FAC /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9EE5BE791AE65A4000356FAC /* DynamicJsonBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicJsonBuffer.cpp; sourceTree = "<group>"; };
+		9EE5BE7B1AE65A4000356FAC /* IndentedPrint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndentedPrint.cpp; sourceTree = "<group>"; };
+		9EE5BE7C1AE65A4000356FAC /* JsonParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonParser.cpp; sourceTree = "<group>"; };
+		9EE5BE7D1AE65A4000356FAC /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		9EE5BE7E1AE65A4000356FAC /* Prettyfier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prettyfier.cpp; sourceTree = "<group>"; };
+		9EE5BE7F1AE65A4000356FAC /* QuotedString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuotedString.cpp; sourceTree = "<group>"; };
+		9EE5BE801AE65A4000356FAC /* StringBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringBuilder.cpp; sourceTree = "<group>"; };
+		9EE5BE811AE65A4000356FAC /* JsonArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonArray.cpp; sourceTree = "<group>"; };
+		9EE5BE821AE65A4000356FAC /* JsonBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonBuffer.cpp; sourceTree = "<group>"; };
+		9EE5BE831AE65A4000356FAC /* JsonObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonObject.cpp; sourceTree = "<group>"; };
+		9EE5BE841AE65A4000356FAC /* JsonVariant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonVariant.cpp; sourceTree = "<group>"; };
+		9EE5C09A1AE6664300356FAC /* StandardCplusplus 2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "StandardCplusplus 2.xcodeproj"; path = "StandardCplusplus/StandardCplusplus 2.xcodeproj"; sourceTree = "<group>"; };
 		AAAA150415224056AA000006 /* abi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abi.cpp; sourceTree = "<group>"; };
 		AAAA150415224056AA000007 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
 		AAAA150415224056AA000008 /* binary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary.h; sourceTree = "<group>"; };
@@ -1636,6 +1694,182 @@
 				9EE5BE201AE071FB00356FAC /* WSClient.h */,
 			);
 			path = "arduino-websocketclient";
+			sourceTree = "<group>";
+		};
+		9EE5BE3D1AE65A4000356FAC /* ArduinoJson */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE3E1AE65A4000356FAC /* .gitignore */,
+				9EE5BE3F1AE65A4000356FAC /* .travis.yml */,
+				9EE5BE401AE65A4000356FAC /* ArduinoJson.cpp */,
+				9EE5BE411AE65A4000356FAC /* ArduinoJson.h */,
+				9EE5BE421AE65A4000356FAC /* CHANGELOG.md */,
+				9EE5BE431AE65A4000356FAC /* CMakeLists.txt */,
+				9EE5BE441AE65A4000356FAC /* examples */,
+				9EE5BE4F1AE65A4000356FAC /* include */,
+				9EE5BE6B1AE65A4000356FAC /* keywords.txt */,
+				9EE5BE6C1AE65A4000356FAC /* library.json */,
+				9EE5BE6D1AE65A4000356FAC /* LICENSE.md */,
+				9EE5BE6E1AE65A4000356FAC /* README.md */,
+				9EE5BE6F1AE65A4000356FAC /* scripts */,
+				9EE5BE751AE65A4000356FAC /* src */,
+			);
+			path = ArduinoJson;
+			sourceTree = "<group>";
+		};
+		9EE5BE441AE65A4000356FAC /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE451AE65A4000356FAC /* IndentedPrintExample */,
+				9EE5BE471AE65A4000356FAC /* JsonGeneratorExample */,
+				9EE5BE491AE65A4000356FAC /* JsonParserExample */,
+				9EE5BE4B1AE65A4000356FAC /* JsonServer */,
+				9EE5BE4D1AE65A4000356FAC /* JsonUdpBeacon */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		9EE5BE451AE65A4000356FAC /* IndentedPrintExample */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE461AE65A4000356FAC /* IndentedPrintExample.ino */,
+			);
+			path = IndentedPrintExample;
+			sourceTree = "<group>";
+		};
+		9EE5BE471AE65A4000356FAC /* JsonGeneratorExample */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE481AE65A4000356FAC /* JsonGeneratorExample.ino */,
+			);
+			path = JsonGeneratorExample;
+			sourceTree = "<group>";
+		};
+		9EE5BE491AE65A4000356FAC /* JsonParserExample */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE4A1AE65A4000356FAC /* JsonParserExample.ino */,
+			);
+			path = JsonParserExample;
+			sourceTree = "<group>";
+		};
+		9EE5BE4B1AE65A4000356FAC /* JsonServer */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE4C1AE65A4000356FAC /* JsonServer.ino */,
+			);
+			path = JsonServer;
+			sourceTree = "<group>";
+		};
+		9EE5BE4D1AE65A4000356FAC /* JsonUdpBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE4E1AE65A4000356FAC /* JsonUdpBeacon.ino */,
+			);
+			path = JsonUdpBeacon;
+			sourceTree = "<group>";
+		};
+		9EE5BE4F1AE65A4000356FAC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE501AE65A4000356FAC /* ArduinoJson */,
+				9EE5BE6A1AE65A4000356FAC /* ArduinoJson.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9EE5BE501AE65A4000356FAC /* ArduinoJson */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE511AE65A4000356FAC /* Arduino */,
+				9EE5BE531AE65A4000356FAC /* DynamicJsonBuffer.hpp */,
+				9EE5BE541AE65A4000356FAC /* Internals */,
+				9EE5BE641AE65A4000356FAC /* JsonArray.hpp */,
+				9EE5BE651AE65A4000356FAC /* JsonBuffer.hpp */,
+				9EE5BE661AE65A4000356FAC /* JsonObject.hpp */,
+				9EE5BE671AE65A4000356FAC /* JsonPair.hpp */,
+				9EE5BE681AE65A4000356FAC /* JsonVariant.hpp */,
+				9EE5BE691AE65A4000356FAC /* StaticJsonBuffer.hpp */,
+			);
+			path = ArduinoJson;
+			sourceTree = "<group>";
+		};
+		9EE5BE511AE65A4000356FAC /* Arduino */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE521AE65A4000356FAC /* Print.hpp */,
+			);
+			path = Arduino;
+			sourceTree = "<group>";
+		};
+		9EE5BE541AE65A4000356FAC /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE551AE65A4000356FAC /* IndentedPrint.hpp */,
+				9EE5BE561AE65A4000356FAC /* JsonBufferAllocated.hpp */,
+				9EE5BE571AE65A4000356FAC /* JsonParser.hpp */,
+				9EE5BE581AE65A4000356FAC /* JsonPrintable.hpp */,
+				9EE5BE591AE65A4000356FAC /* JsonVariantContent.hpp */,
+				9EE5BE5A1AE65A4000356FAC /* JsonVariantType.hpp */,
+				9EE5BE5B1AE65A4000356FAC /* JsonWriter.hpp */,
+				9EE5BE5C1AE65A4000356FAC /* List.hpp */,
+				9EE5BE5D1AE65A4000356FAC /* ListConstIterator.hpp */,
+				9EE5BE5E1AE65A4000356FAC /* ListIterator.hpp */,
+				9EE5BE5F1AE65A4000356FAC /* ListNode.hpp */,
+				9EE5BE601AE65A4000356FAC /* Prettyfier.hpp */,
+				9EE5BE611AE65A4000356FAC /* QuotedString.hpp */,
+				9EE5BE621AE65A4000356FAC /* ReferenceType.hpp */,
+				9EE5BE631AE65A4000356FAC /* StringBuilder.hpp */,
+			);
+			path = Internals;
+			sourceTree = "<group>";
+		};
+		9EE5BE6F1AE65A4000356FAC /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE701AE65A4000356FAC /* build-arduino-package.sh */,
+				9EE5BE711AE65A4000356FAC /* cpplint.sh */,
+				9EE5BE721AE65A4000356FAC /* create-build-envs.sh */,
+				9EE5BE731AE65A4000356FAC /* format-code.sh */,
+				9EE5BE741AE65A4000356FAC /* run-tests.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		9EE5BE751AE65A4000356FAC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE761AE65A4000356FAC /* Arduino */,
+				9EE5BE781AE65A4000356FAC /* CMakeLists.txt */,
+				9EE5BE791AE65A4000356FAC /* DynamicJsonBuffer.cpp */,
+				9EE5BE7A1AE65A4000356FAC /* Internals */,
+				9EE5BE811AE65A4000356FAC /* JsonArray.cpp */,
+				9EE5BE821AE65A4000356FAC /* JsonBuffer.cpp */,
+				9EE5BE831AE65A4000356FAC /* JsonObject.cpp */,
+				9EE5BE841AE65A4000356FAC /* JsonVariant.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9EE5BE761AE65A4000356FAC /* Arduino */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE771AE65A4000356FAC /* Print.cpp */,
+			);
+			path = Arduino;
+			sourceTree = "<group>";
+		};
+		9EE5BE7A1AE65A4000356FAC /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				9EE5BE7B1AE65A4000356FAC /* IndentedPrint.cpp */,
+				9EE5BE7C1AE65A4000356FAC /* JsonParser.cpp */,
+				9EE5BE7D1AE65A4000356FAC /* List.cpp */,
+				9EE5BE7E1AE65A4000356FAC /* Prettyfier.cpp */,
+				9EE5BE7F1AE65A4000356FAC /* QuotedString.cpp */,
+				9EE5BE801AE65A4000356FAC /* StringBuilder.cpp */,
+			);
+			path = Internals;
 			sourceTree = "<group>";
 		};
 		AAAA150415224056AA000000 /* Resources */ = {
@@ -3596,6 +3830,8 @@
 		AAAA150415224056AA000344 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9EE5C09A1AE6664300356FAC /* StandardCplusplus 2.xcodeproj */,
+				9EE5BE3D1AE65A4000356FAC /* ArduinoJson */,
 				9EE5BE161AE071FB00356FAC /* arduino-websocketclient */,
 				AAAA150415224056AA0000C6 /* Ethernet */,
 			);

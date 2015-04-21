@@ -29,4 +29,47 @@ Builds/main.cpp.o: main.cpp \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetUdp.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Udp.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/SPI.h
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/SPI.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/ArduinoJson.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/ArduinoJson.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/DynamicJsonBuffer.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonBuffer.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonArray.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonBufferAllocated.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonPrintable.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/IndentedPrint.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/../Arduino/Print.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonWriter.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/QuotedString.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/Prettyfier.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/StringBuilder.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/List.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/ListConstIterator.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/ListNode.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/ListIterator.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/ReferenceType.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonVariant.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonVariantContent.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonVariantType.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonObject.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonPair.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/StaticJsonBuffer.hpp \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/vector \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/basic_definitions \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/system_configuration.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/memory \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/new \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/exception \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/cstddef \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/cstdlib \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/iterator_base \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/utility.h \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/cstdio \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/iterator \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/iosfwd \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/char_traits \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/func_exception \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/algorithm \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/functional \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/type_traits \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/initializer_list
