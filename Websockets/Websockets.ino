@@ -109,11 +109,16 @@
 #include <WSClient.h>
 #include <vector>
 #include <functional>
+#include <map>
+
 
 
 typedef void (*EventHandler)(String data);
 
 class PusherChannel {
+    friend class Pusher;
+private:
+    std::map<String, EventHandler> callbacks;
 public:
     PusherChannel (String);
     String name;
@@ -125,7 +130,7 @@ PusherChannel::PusherChannel(String n): name(n){}
 
 
 void PusherChannel::bind(String event, EventHandler eventHandler){
-    
+    callbacks[event] = eventHandler;
 }
 
 
@@ -228,6 +233,8 @@ void Pusher::listen(){
         String data;
         data = ws.getData();
         if (data.length() > 0) {
+
+            Serial.println(data);
             
             StaticJsonBuffer<200> jsonBuffer;
             
@@ -236,31 +243,30 @@ void Pusher::listen(){
             if (!root.success())
             {
                 Serial.println("parseObject() failed");
-                return;
             }
             
+            const char* eventChannel = root["channel"];
             const char* event = root["event"];
+//            const char* eventData = root["data"];
             
-        
-            if (!strcmp(event, "pusher_internal:subscription_succeeded")){
-                const char* channelSubscribed = root["channel"];
-                
-                for (std::vector<PusherChannel>::iterator itr = channels.begin(); itr != channels.end(); itr++ ){
-                    String channelName = itr->name;
-                    if (!(strcmp(channelSubscribed, &channelName[0])))
+//            Serial.println(eventData);
+            
+            for (std::vector<PusherChannel>::iterator itr = channels.begin(); itr != channels.end(); itr++ ){
+                String channelName = itr->name;
+                if (!(strcmp(eventChannel, &channelName[0])))
+                {
+                    if (!strcmp(event, "pusher_internal:subscription_succeeded")){
                         itr->subscribed = true;
+                    } else if (!strcmp(event, "pusher:connection_established")){
+                        Serial.println("connection established");
+                    } else{
+                        Serial.println("incoming event");
+//                        Serial.println(eventData);
+                        itr->callbacks[event]("incoming event");
+                    }
+    
                 }
-                
-                
-                Serial.println(event);
-                Serial.println("Yes");
-            } else {
-                Serial.println(event);
-                Serial.println("nope");
             }
-            
-            
-            
         }
     }
 }

@@ -72,4 +72,10 @@ Builds/main.cpp.o: main.cpp \
  /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/algorithm \
  /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/functional \
  /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/type_traits \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/initializer_list
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/initializer_list \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/map \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/deque \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/stdexcept \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/string \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/associative_base \
+ /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/list
