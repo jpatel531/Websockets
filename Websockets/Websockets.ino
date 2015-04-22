@@ -83,15 +83,9 @@
 
 #include <WSClient.h>
 #include <ArduinoJson.h>
+#include <SPI.h>
 #include <Ethernet.h>
 #include <WSClient.h>
-#include <avr/pgmspace.h>
-
-struct PusherEvent {
-    const char* channel;
-    const char* eventType;
-    const char* data;
-};
 
 class Pusher {
 private:
@@ -111,7 +105,7 @@ public:
     bool connected;
     void connect(EthernetClient &client);
     void subscribe(String channel);
-    PusherEvent* listen(String channel, String event);
+    const char* listen(String channel, String event);
 //    std::vector<PusherChannel> channels;
     int channelIndex = 0;
 };
@@ -180,21 +174,19 @@ void Pusher::subscribe(String channelName)
     
     root.printTo(buffer, sizeof(buffer));
     
-    Serial.println(F("")); Serial.println(F("Sending Data"));
     ws.sendData(buffer);
+    Serial.println(F("Subscribed"));
 }
 
 
 
 
-PusherEvent* Pusher::listen(String channel, String event){
+const char* Pusher::listen(String channel, String event){
     String data;
     data = ws.getData();
     
     if (data.length() > 0) {
         
-        Serial.println(data);
-    
         StaticJsonBuffer<200> jsonBuffer;
         
         JsonObject& root = jsonBuffer.parseObject(&data[0]);
@@ -204,9 +196,7 @@ PusherEvent* Pusher::listen(String channel, String event){
         const char* eventData = root["data"];
         
         if (!strcmp(&channel[0], channelName) && !strcmp(&event[0], eventName)){
-            PusherEvent pusherEvent{channelName, eventName, eventData};
-            Serial.println(pusherEvent.data);
-            return &pusherEvent;
+            return eventData;
         }
 
         
@@ -216,41 +206,65 @@ PusherEvent* Pusher::listen(String channel, String event){
 }
 
 
+
+
+//------ ARDUINO SHIZZZZ ---------
+
+
+
 EthernetClient client;
 byte mac[] = {
     0x90, 0xA2, 0xDA, 0x00, 0xF2, 0x78 };
 
 Pusher pusher("112bcc871ae79ea6227a");
 
-void logEvent(String data){
-    Serial.println(data);
-}
+const int LED = 13;
+const char* OFF = "off";
+const char* ON = "on";
 
 void setup() {
     
+    pinMode(LED, OUTPUT);
     
     Serial.begin(9600);
-    
-    Serial.println(F("Demo example on WSClient usage"));
-    Ethernet.begin(mac); // initialize ethernet
-    Serial.println(Ethernet.localIP()); // printout IP address for debug purposes
-    delay(1000); // this is arduino baby ;-)
 
+    Ethernet.begin(mac);
+    Serial.println(Ethernet.localIP());
+    delay(1000);
     
     pusher.connect(client);
-    
     pusher.subscribe("testing");
     
 }
 
 
 void loop() {
-    PusherEvent* event = pusher.listen("testing", "new_event");
+
+
+    const char* eventData = pusher.listen("testing", "new_event");
     
-    if (event != NULL){
-        Serial.println("incoming data!");
-//        Serial.println(event->channel);
-    }
+    if (eventData != NULL)
+        Serial.println(eventData);
     
-    delay(2000);
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
