@@ -11,16 +11,12 @@ Builds/main.cpp.o: main.cpp \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard/pins_arduino.h \
  Websockets.ino \
- /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/Base64.h \
- /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/global.h \
- /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/MD5.h \
- /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/sha1.h \
- /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Users/jamiepatel/Documents/Arduino/libraries/arduino-websocketclient/WSClient.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/Ethernet.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Printable.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetClient.h \
+ /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Client.h \
  /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h \
  /Applications/Arduino.app/Contents/Java/libraries/Ethernet/src/EthernetServer.h \
@@ -53,29 +49,4 @@ Builds/main.cpp.o: main.cpp \
  /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonVariantType.hpp \
  /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonObject.hpp \
  /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonPair.hpp \
- /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/StaticJsonBuffer.hpp \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/vector \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/basic_definitions \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/system_configuration.h \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/memory \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/new \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/exception \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/cstddef \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/cstdlib \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/iterator_base \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/utility.h \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/cstdio \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/iterator \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/iosfwd \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/char_traits \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/func_exception \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/algorithm \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/functional \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/type_traits \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/initializer_list \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/map \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/deque \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/stdexcept \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/string \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/associative_base \
- /Users/jamiepatel/Documents/Arduino/libraries/StandardCplusplus/list
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/StaticJsonBuffer.hpp

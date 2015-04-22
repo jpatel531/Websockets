@@ -81,59 +81,17 @@
 // Define variables and constants
 
 
-/*
- Web client
- 
- This sketch connects to a website (http://www.google.com)
- using an Arduino Wiznet Ethernet shield.
- 
- Circuit:
- * Ethernet shield attached to pins 10, 11, 12, 13
- 
- created 18 Dec 2009
- by David A. Mellis
- modified 9 Apr 2012
- by Tom Igoe, based on work by Adrian McEwen
- 
- */
-
-
-#include <Base64.h>
-#include <global.h>
-#include <MD5.h>
-#include <sha1.h>
 #include <WSClient.h>
 #include <ArduinoJson.h>
 #include <Ethernet.h>
-#include <SPI.h>
 #include <WSClient.h>
-#include <vector>
-#include <functional>
-#include <map>
+#include <avr/pgmspace.h>
 
-
-
-typedef void (*EventHandler)(String data);
-
-class PusherChannel {
-    friend class Pusher;
-private:
-    std::map<String, EventHandler> callbacks;
-public:
-    PusherChannel (String);
-    String name;
-    bool subscribed;
-    void bind(String, EventHandler);
+struct PusherEvent {
+    const char* channel;
+    const char* eventType;
+    const char* data;
 };
-
-PusherChannel::PusherChannel(String n): name(n){}
-
-
-void PusherChannel::bind(String event, EventHandler eventHandler){
-    callbacks[event] = eventHandler;
-}
-
-
 
 class Pusher {
 private:
@@ -152,14 +110,18 @@ public:
     Pusher (String);
     bool connected;
     void connect(EthernetClient &client);
-    PusherChannel subscribe(String channel);
-    void listen();
-    std::vector<PusherChannel> channels;
+    void subscribe(String channel);
+    PusherEvent* listen(String channel, String event);
+//    std::vector<PusherChannel> channels;
+    int channelIndex = 0;
 };
 
 const String Pusher::VERSION = "0.0.1";
 const String Pusher::PROTOCOL = "7";
 const String Pusher::AGENT = "pusher-ws-arduino";
+
+const char* SUBSCRIPTION_SUCCEEDED = "pusher_internal:subscription_succeeded";
+const char* CONNECTION_ESTABLISHED ="pusher:connection_established";
 
 Pusher::Pusher(String k) : key(k) {
     path = "/app/" + key+ "?client="+ AGENT+ "&version="+VERSION+"&protocol=" + PROTOCOL;
@@ -168,7 +130,7 @@ Pusher::Pusher(String k) : key(k) {
 
 
 void Pusher::connectViaEthernet(){
-    Serial.println("connecting..");
+    Serial.println(F("connecting.."));
     if (ethernet->connect(host.c_str(), port)) {
         Serial.println(ethernet->connected());
         Serial.println(F("Connected"));
@@ -192,10 +154,10 @@ void Pusher::connect(EthernetClient &client){
     
     Serial.flush();
     if (ws.handshake(client)) {
-        Serial.println("Handshake successful");
+        Serial.println(F("Handshake successful"));
     }
     else {
-        Serial.println("Handshake failed.");
+        Serial.println(F("Handshake failed."));
         while(1) {
             // Hang on failure
         }
@@ -204,7 +166,7 @@ void Pusher::connect(EthernetClient &client){
 
 }
 
-PusherChannel Pusher::subscribe(String channel)
+void Pusher::subscribe(String channelName)
 {
     
     StaticJsonBuffer<200> jsonBuffer;
@@ -212,77 +174,51 @@ PusherChannel Pusher::subscribe(String channel)
     JsonObject& root = jsonBuffer.createObject();
     root["event"] = "pusher:subscribe";
     JsonObject& data = root.createNestedObject("data");
-    data["channel"] = channel.c_str();
+    data["channel"] = channelName.c_str();
     
-    char buffer[256];
+    char buffer[200];
     
     root.printTo(buffer, sizeof(buffer));
     
-    PusherChannel newChannel(channel);
-    
-    channels.push_back(newChannel);
-    
     Serial.println(F("")); Serial.println(F("Sending Data"));
     ws.sendData(buffer);
-    
-    return newChannel;
 }
-                
-void Pusher::listen(){
-    while(true){
-        String data;
-        data = ws.getData();
-        if (data.length() > 0) {
 
-            Serial.println(data);
-            
-            StaticJsonBuffer<200> jsonBuffer;
-            
-            JsonObject& root = jsonBuffer.parseObject(&data[0]);
-            
-            if (!root.success())
-            {
-                Serial.println("parseObject() failed");
-            }
-            
-            const char* eventChannel = root["channel"];
-            const char* event = root["event"];
-//            const char* eventData = root["data"];
-            
-//            Serial.println(eventData);
-            
-            for (std::vector<PusherChannel>::iterator itr = channels.begin(); itr != channels.end(); itr++ ){
-                String channelName = itr->name;
-                if (!(strcmp(eventChannel, &channelName[0])))
-                {
-                    if (!strcmp(event, "pusher_internal:subscription_succeeded")){
-                        itr->subscribed = true;
-                    } else if (!strcmp(event, "pusher:connection_established")){
-                        Serial.println("connection established");
-                    } else{
-                        Serial.println("incoming event");
-//                        Serial.println(eventData);
-                        itr->callbacks[event]("incoming event");
-                    }
+
+
+
+PusherEvent* Pusher::listen(String channel, String event){
+    String data;
+    data = ws.getData();
     
-                }
-            }
+    if (data.length() > 0) {
+        
+        Serial.println(data);
+    
+        StaticJsonBuffer<200> jsonBuffer;
+        
+        JsonObject& root = jsonBuffer.parseObject(&data[0]);
+        
+        const char* channelName = root["channel"];
+        const char* eventName = root["event"];
+        const char* eventData = root["data"];
+        
+        if (!strcmp(&channel[0], channelName) && !strcmp(&event[0], eventName)){
+            PusherEvent pusherEvent{channelName, eventName, eventData};
+            Serial.println(pusherEvent.data);
+            return &pusherEvent;
         }
+
+        
+    } else {
+        return NULL;
     }
 }
-            
 
-// Ethernet Configuration
+
 EthernetClient client;
 byte mac[] = {
     0x90, 0xA2, 0xDA, 0x00, 0xF2, 0x78 };
-
-
-//IPAddress server(174,129,224,73);
-char server[] = "ws.pusherapp.com";
-
-// Websocket initialization
-//WSClient websocket;
 
 Pusher pusher("112bcc871ae79ea6227a");
 
@@ -299,18 +235,22 @@ void setup() {
     Ethernet.begin(mac); // initialize ethernet
     Serial.println(Ethernet.localIP()); // printout IP address for debug purposes
     delay(1000); // this is arduino baby ;-)
-    
+
     
     pusher.connect(client);
     
-
-    PusherChannel testingChannel = pusher.subscribe("testing");
-    
-    testingChannel.bind("new_event", logEvent);
+    pusher.subscribe("testing");
     
 }
 
 
 void loop() {
-    pusher.listen();
+    PusherEvent* event = pusher.listen("testing", "new_event");
+    
+    if (event != NULL){
+        Serial.println("incoming data!");
+//        Serial.println(event->channel);
+    }
+    
+    delay(2000);
 }

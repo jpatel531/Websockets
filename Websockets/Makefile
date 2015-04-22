@@ -32,8 +32,7 @@ APP_LIBS_LIST = Ethernet
 #
 #USER = Arduino-Websocket
 #
-USER_LIBS_LIST = arduino-websocketclient ArduinoJson StandardCplusplus
-
+USER_LIBS_LIST = arduino-websocketclient ArduinoJson MemoryFree
 # List local libraries here
 # default = empty = all
 #

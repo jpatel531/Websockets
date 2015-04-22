@@ -10,12 +10,18 @@
 	<string>Websockets</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>149CC3ECD5EBE206E32A40C6C2A47C2728DF21AB</key>
+		<string>https://github.com/interactive-matter/aJson.git</string>
 		<key>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</key>
 		<string>https://github.com/krohling/ArduinoWebsocketClient.git</string>
 		<key>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</key>
 		<string>https://github.com/jpatel531/Websockets.git</string>
 		<key>680B43941F48A36A0471451E1F70DFF3E2A8F430</key>
 		<string>https://github.com/bblanchon/ArduinoJson.git</string>
+		<key>7448E718372DB7A4B0D01E27524ED3F8AE51A902</key>
+		<string>https://github.com/miloyip/rapidjson.git</string>
+		<key>8FD4BA5D0FC02D181F1C3986996CA247B800FAF5</key>
+		<string>https://github.com/sudar/MemoryFree</string>
 		<key>BAC2D03156E332530A39C2FE00C794C96088E27A</key>
 		<string>https://github.com/djsb/arduino-websocketclient.git</string>
 		<key>F82126AFC57ECEF01A59099FCAE2B1097AC96861</key>
@@ -25,16 +31,22 @@
 	<string>Websockets.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>149CC3ECD5EBE206E32A40C6C2A47C2728DF21AB</key>
+		<string>../../../Documents/Arduino/libraries/aJson</string>
 		<key>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</key>
 		<string>../../../Documents/Arduino/libraries/ArduinoWebsocketClient</string>
 		<key>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</key>
 		<string>../..</string>
 		<key>680B43941F48A36A0471451E1F70DFF3E2A8F430</key>
-		<string>../../../../Documents/Arduino/libraries/ArduinoJson</string>
+		<string>../../../Documents/Arduino/libraries/ArduinoJson</string>
+		<key>7448E718372DB7A4B0D01E27524ED3F8AE51A902</key>
+		<string>../../../Documents/Arduino/libraries/rapidjson</string>
+		<key>8FD4BA5D0FC02D181F1C3986996CA247B800FAF5</key>
+		<string>../../../../Documents/Arduino/libraries/MemoryFree</string>
 		<key>BAC2D03156E332530A39C2FE00C794C96088E27A</key>
 		<string>../../../Documents/Arduino/libraries/arduino-websocketclient</string>
 		<key>F82126AFC57ECEF01A59099FCAE2B1097AC96861</key>
-		<string>../../../../Documents/Arduino/libraries/StandardCplusplus</string>
+		<string>../../../Documents/Arduino/libraries/StandardCplusplus</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jpatel531/Websockets.git</string>
@@ -44,6 +56,14 @@
 	<string>65BC131B249F0F5BDB01ED95132BED7C8AF5E37F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>149CC3ECD5EBE206E32A40C6C2A47C2728DF21AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>aJson</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -67,6 +87,22 @@
 			<string>367B41DA185A1BC282C4CCAB5FE0568AFBEF84BA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ArduinoWebsocketClient</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FD4BA5D0FC02D181F1C3986996CA247B800FAF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MemoryFree</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7448E718372DB7A4B0D01E27524ED3F8AE51A902</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rapidjson</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
