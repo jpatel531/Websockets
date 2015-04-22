@@ -36,7 +36,7 @@ USER_LIBS_LIST = arduino-websocketclient ArduinoJson
 # List local libraries here
 # default = empty = all
 #
-LOCAL_LIBS_LIST =
+LOCAL_LIBS_LIST = PusherWSArduino
 
 # List core, application and user's libraries to be excluded
 # For example, WiFi may crash on Arduino 1.0.2, Esplora on Arduino 1.0.3, Firmata on Teensy 3.0,

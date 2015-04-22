@@ -49,4 +49,5 @@ Builds/main.cpp.o: main.cpp \
  /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/Internals/JsonVariantType.hpp \
  /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonObject.hpp \
  /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/JsonPair.hpp \
- /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/StaticJsonBuffer.hpp
+ /Users/jamiepatel/Documents/Arduino/libraries/ArduinoJson/include/../include/ArduinoJson/StaticJsonBuffer.hpp \
+ PusherWSArduino/PusherWSArduino.h
